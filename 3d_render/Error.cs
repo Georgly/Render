@@ -29,5 +29,12 @@ namespace _3d_render
             string main = ("ERROR!");
             MessageBox.Show(main, err);
         }
+
+        public static void NullList()
+        {
+            string err = ("Error");
+            string main = ("Nothing to draw");
+            MessageBox.Show(main, err);
+        }
     }
 }

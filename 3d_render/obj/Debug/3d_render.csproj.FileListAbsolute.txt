@@ -12,3 +12,17 @@ C:\Users\EgorV_000.PROMETEUS\Documentation\ВУЗ\Программировани
 C:\Users\EgorV_000.PROMETEUS\Documentation\ВУЗ\Программирование\проекты С#\3d_render\3d_render\obj\Debug\3d_render.csproj.GenerateResource.Cache
 C:\Users\EgorV_000.PROMETEUS\Documentation\ВУЗ\Программирование\проекты С#\3d_render\3d_render\obj\Debug\3d_render.exe
 C:\Users\EgorV_000.PROMETEUS\Documentation\ВУЗ\Программирование\проекты С#\3d_render\3d_render\obj\Debug\3d_render.pdb
+C:\Users\EgorV_000.PROMETEUS\Documentation\Univer\Programm\С#-proj\3d_render\3d_render\bin\Debug\3d_render.exe.config
+C:\Users\EgorV_000.PROMETEUS\Documentation\Univer\Programm\С#-proj\3d_render\3d_render\obj\Debug\3d_render.exe
+C:\Users\EgorV_000.PROMETEUS\Documentation\Univer\Programm\С#-proj\3d_render\3d_render\obj\Debug\3d_render.pdb
+C:\Users\EgorV_000.PROMETEUS\Documentation\Univer\Programm\С#-proj\3d_render\3d_render\bin\Debug\3d_render.exe
+C:\Users\EgorV_000.PROMETEUS\Documentation\Univer\Programm\С#-proj\3d_render\3d_render\bin\Debug\3d_render.pdb
+C:\Users\EgorV_000.PROMETEUS\Documentation\Univer\Programm\С#-proj\3d_render\3d_render\obj\Debug\3d_render.csprojResolveAssemblyReference.cache
+C:\Users\EgorV_000.PROMETEUS\Documentation\Univer\Programm\С#-proj\3d_render\3d_render\obj\Debug\MainWindow.g.cs
+C:\Users\EgorV_000.PROMETEUS\Documentation\Univer\Programm\С#-proj\3d_render\3d_render\obj\Debug\App.g.cs
+C:\Users\EgorV_000.PROMETEUS\Documentation\Univer\Programm\С#-proj\3d_render\3d_render\obj\Debug\3d_render_MarkupCompile.cache
+C:\Users\EgorV_000.PROMETEUS\Documentation\Univer\Programm\С#-proj\3d_render\3d_render\obj\Debug\3d_render_MarkupCompile.lref
+C:\Users\EgorV_000.PROMETEUS\Documentation\Univer\Programm\С#-proj\3d_render\3d_render\obj\Debug\MainWindow.baml
+C:\Users\EgorV_000.PROMETEUS\Documentation\Univer\Programm\С#-proj\3d_render\3d_render\obj\Debug\3d_render.g.resources
+C:\Users\EgorV_000.PROMETEUS\Documentation\Univer\Programm\С#-proj\3d_render\3d_render\obj\Debug\_3d_render.Properties.Resources.resources
+C:\Users\EgorV_000.PROMETEUS\Documentation\Univer\Programm\С#-proj\3d_render\3d_render\obj\Debug\3d_render.csproj.GenerateResource.Cache

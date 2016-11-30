@@ -21,58 +21,102 @@ namespace _3d_render
     /// </summary>
     public partial class MainWindow : Window
     {
-        int clickCount = 1;
+        int clickCount = 0;
+        Model model;
         public MainWindow()
         {
             InitializeComponent();
+            model = new Model(myCanva, (int)zoomSlider.Value);
         }
 
         private void _3D_Render_Load(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void openFileBt_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFD = new OpenFileDialog();
             openFD.ShowDialog();
-            Model.OpenFile(openFD.FileName);
+            clickCount = 1;
+            model.OpenFile(openFD.FileName);
         }
 
         private void drawModelBt_Click(object sender, RoutedEventArgs e)
         {
             myCanva.Children.Clear();
+            if (clickCount != 3)
+            {
+                clickCount++;
+            }
+            else
+            {
+                clickCount = 0;
+                clickCount++;
+            }
             switch (clickCount)
             {
-                case 1:
-                    {
-                        List<Ellipse> elipse = Model.DrawModelPoint();
-                        for (int i = 0; i < elipse.Count; i++)
-                        {
-                            myCanva.Children.Add(elipse[i]);
-                        }
-                        clickCount++;
-                        break;
-                    }
+                //case 1:
+                //    {
+                //        model.DrawModelPoint(myCanva);
+                //        break;
+                //    }
                 case 2:
                     {
-                        List<Polyline> poligons = Model.DrawModelPolygon();
-                        for (int i = 0; i < poligons.Count; i++)
-                        {
-                            myCanva.Children.Add(poligons[i]);
-                        }
-                        clickCount++;
+                        model.DrawModelPolygon(myCanva);
                         break;
                     }
                 case 3:
                     {
-                        clickCount = 1;
+                        model.DrawModelFill(myCanva);
                         break;
                     }
                 default:
                     break;
             }
-            //myGrid.Children.Add(Model.DrawModelPoint());
+        }
+
+        private void upBt_Click(object sender, RoutedEventArgs e)
+        {
+            model.VerticalMove(1, clickCount);
+        }
+
+        private void leftBt_Click(object sender, RoutedEventArgs e)
+        {
+            model.HorizontalMove(-1, clickCount);
+        }
+
+        private void rightBt_Click(object sender, RoutedEventArgs e)
+        {
+            model.HorizontalMove(1, clickCount);
+        }
+
+        private void downBt_Click(object sender, RoutedEventArgs e)
+        {
+            model.VerticalMove(-1, clickCount);
+        }
+
+        private void turnBt_Click(object sender, RoutedEventArgs e)
+        {
+            if (Convert.ToInt32(xCoord.IsChecked) == 0 && Convert.ToInt32(yCoord.IsChecked) == 0 && Convert.ToInt32(zCoord.IsChecked) == 0)
+            {
+                MessageBox.Show("Задайте ось(-и) вращения");
+            }
+            else
+            {
+                model.TurnModel(clickCount, Convert.ToInt32(xCoord.IsChecked), Convert.ToInt32(yCoord.IsChecked), Convert.ToInt32(zCoord.IsChecked));
+            }
+        }
+
+        private void myCanva_MouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            zoomSlider.Value += (e.Delta > 0) ? 0.2 : -0.2;
+            model.Zoom(clickCount, (int)zoomSlider.Value);
+        }
+
+        private void _3D_Render_Closed(object sender, EventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

@@ -58,6 +58,7 @@
     <Compile Include="Poligon.cs" />
     <Compile Include="Error.cs" />
     <Compile Include="Model.cs" />
+    <Compile Include="Vector.cs" />
     <Compile Include="Vertex.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
